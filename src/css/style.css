@@ -30,6 +30,7 @@ header{
     width: 100%;
     height: 70px;
     border-bottom: 2px solid #b52e1a;
+        background: #fff;
 }
 .logo{
     float: left;
@@ -61,8 +62,64 @@ header{
     font-size: 14px;
     font-weight: 500;
 }
+.bg_fix{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center left;
+}
+#carro {
+    background-image: url(../imagens/post-insulfilm-infografico.png);
 
+}
+#residencial {
+    background-image: url(../imagens/insulfilm-espelhado-residencial.jpg);
+
+}
+#insulfilms {
+    background-image: url(../imagens/post-insulfilm-infografico.png);
+
+}
+#projetos {
+    background-image: url(../imagens/insulfilm-espelhado-residencial.jpg);
+
+}
+body, html{
+    height: 100%;
+}
+section {
+    height: 100%;
+}
+.menu-fixo section {
+    padding-top: 70px;
+}
+.menu-fixo header{
+    position: fixed;
+        z-index: 1;
+        width: 100%;
+        background: #fff;
+}
+.txt-Mobile{
+    display: none;
+}
+.textConteudo {
+    float: right;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    padding: 20px 40px;
+    background: #ffffff80;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}
 @media (min-width:320px) and (max-width:767px) {
+    .txt-Mobile{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 22px;
+    }
     .menuMobile {
         display: block;
         background: url(../imagens/iconeHB.png) no-repeat;
@@ -79,14 +136,14 @@ header{
         position: absolute;
         transition-duration: 1s;
         width: 230px;
-        height: 100%;
+        height: 100em;
         background: #fff9f9;
     }
     .nav-menu-monile{
         position: absolute;
         z-index: 1;
         width: 230px;
-        height: 100%;
+        height: 100em;
         background: #fff9f9;
         transform: translate(230px);
         transition-duration: 2s;

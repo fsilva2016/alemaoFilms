@@ -19,20 +19,57 @@
             <div class="menu">
                 <a class="menuMobile">click</a>
                 <nav class="menuContudo">
-                    <li><a href="#HOME" class="link">HOME</a></li>
-                    <li><a href="#CARRO" class="link">CARRO</a></li>
-                    <li><a href="#RESIDENCIAL" class="link">RESIDENCIAL</a></li>
-                    <li><a href="#FILMES" class="link">FILMES</a></li>
-                    <li><a href="#PROJETOS" class="link">PROJETOS</a></li>
-                    <li><a href="#CONTATO" class="link">CONTATO</a></li>
+                    <li class="txt-Mobile">MENU</li>
+                    <li><a href="#carro" class="link">CARRO</a></li>
+                    <li><a href="#residencial" class="link">RESIDENCIAL</a></li>
+                    <li><a href="#insulfilms" class="link">INSULFILMS</a></li>
+                    <li><a href="#projetos" class="link">PROJETOS</a></li>
+                    <li><a href="#contatos" class="link">CONTATO</a></li>
                 </nav>
 
             </div>
         </div>
 
     </header>
-    <section>
-
+    <section id="carro"  class="bg_fix">
+        <div class="container">
+            <div class="textConteudo">
+                <h3>carro</h3> 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </div>
+        </div>
+    </section>
+    <section id="residencial" class="bg_fix">
+        <div class="container">
+            <div class="textConteudo">
+                <h3>residencial</h3> 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </div>
+        </div>
+    </section>
+    <section id="insulfilms" class="bg_fix">
+        <div class="container">
+            <div class="textConteudo">
+                <h3>insulfilms</h3> 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </div>
+        </div>
+    </section>
+    <section id="projetos" class="bg_fix">
+        <div class="container">
+            <div class="textConteudo">
+                <h3>projetos</h3> 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="bg_fix">
+        <div class="container">
+            <div class="textConteudo">
+                <h3>contato</h3> 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </div>
+        </div>
     </section>
     <footer>
 
@@ -43,6 +80,19 @@
          $(".menuMobile").on("click", function(){
             $(".menuContudo ").toggleClass("nav-menu-monile");
         });
+
+
+        $(function () {
+            let menuFix = $("body");
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 70){
+                    menuFix.addClass("menu-fixo");
+                } else {
+                    menuFix.removeClass("menu-fixo");
+                }
+                
+            })
+        })
     </script>
 </body>
 </html>

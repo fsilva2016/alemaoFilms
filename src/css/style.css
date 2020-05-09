@@ -10,11 +10,11 @@
 
 }
 a {
-    color: #000 !important;
+    color: #000;
     text-decoration: none  !important;
 }
 a:hover {
-    color: #000  !important;
+    color: #000 ;
     text-decoration: none  !important;
 }
 body {
@@ -62,6 +62,10 @@ header{
     font-size: 14px;
     font-weight: 500;
 }
+.textConteudo > p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
 .bg_fix{
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -72,7 +76,7 @@ header{
 
 }
 #residencial {
-    background-image: url(../imagens/insulfilm-espelhado-residencial.jpg);
+    background-image: url(../imagens/insulfilm-espelhado-residencial.jpeg);
 
 }
 #insulfilms {
@@ -89,6 +93,13 @@ body, html{
 section {
     height: 100%;
 }
+.textConteudo h3{
+    color: #b52e1a;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
 .menu-fixo section {
     padding-top: 70px;
 }
@@ -98,7 +109,7 @@ section {
         width: 100%;
         background: #fff;
 }
-.txt-Mobile{
+li.txt-Mobile{
     display: none;
 }
 .textConteudo {
@@ -111,6 +122,17 @@ section {
     color: #000;
     font-size: 17px;
     font-weight: 500;
+    text-align: justify ;
+}
+.textConteudo > .link {
+    background: #b22f1c;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 9px;
+    width: 130px;
+    float: left;
+    margin: 0 33%;
+    text-align: center;
 }
 @media (min-width:320px) and (max-width:767px) {
     .txt-Mobile{

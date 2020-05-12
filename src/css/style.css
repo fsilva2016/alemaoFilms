@@ -1,67 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-.menuMobile{
-    display: none;
-}
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-
-}
-a {
-    color: #000;
-    text-decoration: none  !important;
-}
-a:hover {
-    color: #000 ;
-    text-decoration: none  !important;
-}
-body {
-    font-family: 'Roboto', sans-serif !important;
-    width: 100%;
-}
-.container{
-    width: 100%;
-    min-width: 320px;
-    max-width: 1140px;
-}
-header{
-    width: 100%;
-    height: 70px;
-    border-bottom: 2px solid #b52e1a;
-        background: #fff;
-}
-.logo{
-    float: left;
-    width: 200px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.logo a{ 
-    text-indent: -9999px;
-    float: left;
-}
-.logo a img {
-    float: left;
-    width: 100%;
-}
-.menuContudo {
-    float: right;
-    height: 60px;
-    line-height: 60px;
-}
-.menuContudo li {
-    float: left;
-    padding: 5px 10px;
-    display: block;
-    list-style-type: none;
-}
-.menuContudo li  a{
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-}
 .textConteudo > p {
     margin-top: 0;
     margin-bottom: 0.3rem;
@@ -69,30 +5,36 @@ header{
 .bg_fix{
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+}
+#carro,
+#residencial,
+#insulfilms, 
+#projetos {
+    height: 63%;
 }
 #carro {
     background-image: url(../imagens/insulfilm-automotivo-1280x720.jpg);
-
 }
 #residencial {
     background-image: url(../imagens/insulfilm-espelhado-residencial.jpeg);
-
 }
 #insulfilms {
     background-image: url(../imagens/Peliculas-Automotivas.jpg);
-
 }
-#projetos {
-    background-image: url(../imagens/insulfilm-espelhado-residencial.jpg);
-
+.bx-wrapper a.bx-next {
+    right: -40px;
+}
+.bx-wrapper a.bx-prev {
+    left: -40px;
 }
 body, html{
     height: 100%;
 }
 section {
-    height: 100%;
+    height:100%;
+    padding-top: 70px;
 }
 .textConteudo h3{
     color: #b52e1a;
@@ -101,22 +43,18 @@ section {
     margin-top: 15px;
     color: #b52e1a;
 }
-p {
-    margin-top: 0;
-    margin-bottom: 0.3rem;
+.mapaocalizacao h1,
+.textContato h1{
+    margin-top: 15px;
+    color: #b52e1a;
 }
-.menu-fixo section {
-    padding-top: 70px;
+.textContato p{
+color: #000;
+    font-size: 18px;
+    font-weight: 500;
 }
-.menu-fixo header{
-    position: fixed;
-        z-index: 1;
-        width: 100%;
-        background: #fff;
-}
-li.txt-Mobile{
-    display: none;
-}
+
+
 .contprojetos{
     float: left;
     width: 100%;
@@ -138,16 +76,14 @@ li.txt-Mobile{
     margin-bottom: 0 !important;
 }
 .textConteudo {
-    float: right;
+    float: left;
     width: 100%;
-    max-width: 400px;
     display: block;
-    padding: 20px 40px;
-    background: #ffffff80;
+    padding: 20px 20px;
     color: #000;
     font-size: 17px;
     font-weight: 500;
-    text-align: justify ;
+    text-align: justify;
 }
 .textConteudo > .link {
     background: #b22f1c;
@@ -156,68 +92,42 @@ li.txt-Mobile{
     border-radius: 9px;
     width: 130px;
     float: left;
-    margin: 20px 33%;
+    margin: 20px 0;
     text-align: center;
 }
+
+
+
 @media (min-width:320px) and (max-width:767px) {
-    li.txt-Mobile{
-        display: block;
-        height: 40px;
-        line-height: 40px;
-        font-weight: bold;
-        font-size: 22px;
+    #carro, #residencial, #insulfilms, #projetos {
+        height: 32%;
     }
-    .menuMobile {
-        display: block;
-        background: url(../imagens/iconeHB.png) no-repeat;
-        width: 41px;
-        position: absolute;
+    section {
+        height: 110%;
+        padding-top: 70px;
+    }
+    .textConteudo {
+        padding: 20px 20px;
+    }  
+    .bx-wrapper a.bx-prev {
+        left: 10px;
+    }
+    .bx-wrapper a.bx-next {
         right: 10px;
-        top: 18px;
-        height: 40px;
-        text-indent: -999px;
-        background-size: cover;
+    }    
+    .bg_fix {
+        background-attachment: initial;
     }
-    .menuContudo{
-        left: -230px;
-        position: absolute;
-        transition-duration: 1s;
-        width: 230px;
-        height: 100em;
-        background: #fff9f9;
+    section.residencial {
+        height: 150%;
     }
-    .nav-menu-monile{
-        position: absolute;
-        z-index: 1;
-        width: 230px;
-        height: 100em;
-        background: #fff9f9;
-        transform: translate(230px);
-        transition-duration: 2s;
-        border-right: 1px solid #ccc;
-        box-shadow: 1px -1px 20px 4px #ccc;
+    section.insulfims {
+        height: 150%;
     }
-    .menuContudo li {
-        padding: 0px 10px;
-        width: 100%;
-        height: 35px;
-        line-height: 35px;
-        border-bottom: 1px solid #b52e1a;
+    section#contato {
+        height: 120%;
     }
-    i.close {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 35px;
-        color: #fff;
-        text-shadow: none;
-        opacity: 1;
-        position: absolute;
-        right: 0px;
-        background: #000;
-        width: 35px;
-        height: 35px;
-        text-align: center;
-    }
+    
 }
 
 

@@ -70,9 +70,10 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center left;
+    background-size: cover;
 }
 #carro {
-    background-image: url(../imagens/post-insulfilm-infografico.png);
+    background-image: url(../imagens/insulfilm-automotivo-1280x720.jpg);
 
 }
 #residencial {
@@ -80,7 +81,7 @@ header{
 
 }
 #insulfilms {
-    background-image: url(../imagens/post-insulfilm-infografico.png);
+    background-image: url(../imagens/Peliculas-Automotivas.jpg);
 
 }
 #projetos {
@@ -94,6 +95,10 @@ section {
     height: 100%;
 }
 .textConteudo h3{
+    color: #b52e1a;
+}
+.textConteudo h4{
+    margin-top: 15px;
     color: #b52e1a;
 }
 p {
@@ -111,6 +116,26 @@ p {
 }
 li.txt-Mobile{
     display: none;
+}
+.contprojetos{
+    float: left;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    padding: 20px 40px;
+    background: #ffffff80;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: justify;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+    margin-bottom: 0 !important;
 }
 .textConteudo {
     float: right;
@@ -131,7 +156,7 @@ li.txt-Mobile{
     border-radius: 9px;
     width: 130px;
     float: left;
-    margin: 0 33%;
+    margin: 20px 33%;
     text-align: center;
 }
 @media (min-width:320px) and (max-width:767px) {
@@ -180,3 +205,5 @@ li.txt-Mobile{
         border-bottom: 1px solid #b52e1a;
     }
 }
+
+

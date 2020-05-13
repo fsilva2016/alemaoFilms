@@ -8,11 +8,16 @@
     background-position: center center;
     background-size: cover;
 }
-#carro,
-#residencial,
-#insulfilms, 
-#projetos {
-    height: 63%;
+#carro, #residencial, #insulfilms{
+    height: 70%;
+    max-height: 100%;
+}
+
+section.projetos {
+    height: 70%;
+}
+section#contato {
+    height: 700px;
 }
 #carro {
     background-image: url(../imagens/insulfilm-automotivo-1280x720.jpg);
@@ -23,12 +28,12 @@
 #insulfilms {
     background-image: url(../imagens/Peliculas-Automotivas.jpg);
 }
-.bx-wrapper a.bx-next {
+/* .bx-wrapper a.bx-next {
     right: -40px;
 }
 .bx-wrapper a.bx-prev {
     left: -40px;
-}
+} */
 body, html{
     height: 100%;
 }
@@ -75,6 +80,24 @@ color: #000;
     background: none !important;
     margin-bottom: 0 !important;
 }
+#projetos .container {
+    padding: 30px;
+}
+#projetos  .textConteudo {
+    padding:20px 0 ;
+}
+.mapaocalizacao {
+    float: right;
+    max-width: 100%;
+    padding: 20px;
+    width: 50%;
+}
+.textContato {
+    padding: 20px;
+    float: left;
+    max-width: 100%;
+    width: 50%;
+}
 .textConteudo {
     float: left;
     width: 100%;
@@ -96,14 +119,25 @@ color: #000;
     text-align: center;
 }
 
-
+.menuContudo li a:hover {
+    border-bottom: 2px solid #a73d2e;
+    color: #a73d2e;
+}
 
 @media (min-width:320px) and (max-width:767px) {
-    #carro, #residencial, #insulfilms, #projetos {
+    .mapaocalizacao,
+    .textContato {
+        width:100%;
+    }
+    .menuContudo li a:hover {
+        border-bottom: 0;
+        color: #a73d2e;
+    }
+    #carro, #residencial, #insulfilms {
         height: 32%;
     }
     section {
-        height: 110%;
+        height: 582px;
         padding-top: 70px;
     }
     .textConteudo {
@@ -119,13 +153,16 @@ color: #000;
         background-attachment: initial;
     }
     section.residencial {
-        height: 150%;
+        height: 725px;
     }
     section.insulfims {
-        height: 150%;
+        height: 700px;
+    }
+    section.projetos {
+        height: 558px;
     }
     section#contato {
-        height: 120%;
+        height: 830px;
     }
     
 }
